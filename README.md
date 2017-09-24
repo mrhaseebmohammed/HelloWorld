@@ -34,6 +34,7 @@ Ensure HelloWorldAPI is running. Navigate to the HelloWorldConsole folder and ru
 # To run angular application: 
 Ensure HelloWorldAPI is running. 
 1. Navigate to the HelloWorldAngular folder and run in order: 
-2. npm install npm start 
-3. Navigate to localhost:4200 on your machine. 
-4. If Chrome blocks api due to different origin, use Allow-Control-Allow-Origin: * extension. Add localhost:5000 to the config of the extension.
+2. npm install 
+3. npm start 
+4. Navigate to localhost:4200 on your machine. 
+5. If Chrome blocks api due to different origin, use Allow-Control-Allow-Origin: * extension. Add localhost:5000 to the config of the extension.
