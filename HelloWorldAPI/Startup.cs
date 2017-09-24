@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using HelloWorldAPI.Models;
 
 namespace HelloWorldAPI
 {
@@ -27,6 +28,9 @@ namespace HelloWorldAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Add custom configuration.
+            services.Configure<WriteToConfig>(Configuration.GetSection("WriteTo"));
+
             // Add framework services.
             services.AddMvc();
         }

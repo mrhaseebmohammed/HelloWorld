@@ -7,12 +7,20 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using HelloWorldAPI.Models;
 using HelloWorldAPI.Utils;
+using Microsoft.Extensions.Options;
 
 namespace HelloWorldAPI.Controllers
 {
     [Route("api/[controller]")]
     public class TranslateController : Controller
     {
+        private readonly WriteToConfig _writeToConfig;
+
+        public TranslateController(IOptions<WriteToConfig> writeToConfig)
+        {
+            _writeToConfig = writeToConfig.Value;
+        }
+
         // GET api/values
         [HttpGet]
         public string Get(TranslateModel wordToTranslate)
@@ -27,19 +35,22 @@ namespace HelloWorldAPI.Controllers
             {
                 JObject translation = JObject.Parse(System.IO.File.ReadAllText("./Localization/" + wordToTranslate.Culture + ".json"));
 
-                if (translation[wordToTranslate.Word] == null)
+                var translatedWord = (string)translation[wordToTranslate.Word];
+                if (translatedWord == null)
                 {
                     //TODO Log error regarding missing/invalid word.
                     return "-1";
                 }
                 else
                 {
-                    return (string)translation[wordToTranslate.Word];
+                    Utils.Utils.WriteToConsoleDB(translatedWord, _writeToConfig);
+                    return translatedWord;
                 }
             }
             else
             {
                 // TODO Log error regarding missing/invalid culture.
+
                 return null;
             }
         }
