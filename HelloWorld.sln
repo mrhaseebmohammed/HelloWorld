@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldAPI", "HelloWorldAPI\HelloWorldAPI.csproj", "{9FBCB9D9-2774-45D0-B80A-D93946B44C68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldAPITests", "HelloWorldAPITests\HelloWorldAPITests.csproj", "{D3C3A51C-4D11-4BAA-A92B-EE7EA21F2205}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FBCB9D9-2774-45D0-B80A-D93946B44C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FBCB9D9-2774-45D0-B80A-D93946B44C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FBCB9D9-2774-45D0-B80A-D93946B44C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FBCB9D9-2774-45D0-B80A-D93946B44C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3C3A51C-4D11-4BAA-A92B-EE7EA21F2205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3C3A51C-4D11-4BAA-A92B-EE7EA21F2205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3C3A51C-4D11-4BAA-A92B-EE7EA21F2205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3C3A51C-4D11-4BAA-A92B-EE7EA21F2205}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
