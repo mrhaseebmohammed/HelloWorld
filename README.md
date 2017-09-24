@@ -7,3 +7,23 @@ i. Use common design patterns (inheritance, e.g.) to account for these future co
 ii. Use configuration files or another industry-standard mechanism for determining where to write the information to.
 
 Write unit tests to support the API.
+
+
+To run unit tests:
+Navigate to the HelloWorldAPITests folder and run in order:
+dotnet restore
+dotnet build
+dotnet run
+
+To run API:
+Navigate to the HelloWorldAPI folder and run in order:
+dotnet restore
+dotnet build
+dotnet run
+
+To run console application:
+Ensure HelloWorldAPI is running.
+Navigate to the HelloWorldConsole folder and run in order:
+dotnet restore
+dotnet build
+dotnet run
