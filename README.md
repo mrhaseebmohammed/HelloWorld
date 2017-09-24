@@ -13,19 +13,19 @@
  Write unit tests to support the API.
 
 
-# To run unit tests
+# To run unit tests: 
 Navigate to the HelloWorldAPITests folder and run in order: 
 1. dotnet restore 
 2. dotnet build 
 3. dotnet run
 
-# To run API
+# To run API: 
 Navigate to the HelloWorldAPI folder and run in order: 
 1. dotnet restore 
 2. dotnet build 
 3. dotnet run
 
-# To run console application. 
+# To run console application: 
 Ensure HelloWorldAPI is running. Navigate to the HelloWorldConsole folder and run in order: 
 1. dotnet restore 
 2. dotnet build 
