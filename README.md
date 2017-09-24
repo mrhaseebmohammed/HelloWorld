@@ -10,8 +10,7 @@
  
  ii. Use configuration files or another industry-standard mechanism for determining where to write the information to.
  
-
-# Write unit tests to support the API.
+ Write unit tests to support the API.
 
 
 # To run unit tests
