@@ -11,7 +11,8 @@
     <PackageReference Include="xunit" Version="2.2.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
     <ProjectReference Include="..\HelloWorldAPI\HelloWorldAPI.csproj" />
-     <None Include="Localization\en-US.json" CopyToOutputDirectory="Always" />
+    <None Include="Localization\en-US.json" CopyToOutputDirectory="Always" />
+    <None Include="Localization\es-ES.json" CopyToOutputDirectory="Always" />
   </ItemGroup>
 
 </Project>
