@@ -27,3 +27,12 @@ Navigate to the HelloWorldConsole folder and run in order:
 dotnet restore
 dotnet build
 dotnet run
+
+To run angular application:
+Ensure HelloWorldAPI is running.
+Navigate to the HelloWorldAngular folder and run in order:
+npm install
+npm start
+Navigate to localhost:4200 on your machine.
+If Chrome blocks api due to different origin, use "Allow-Control-Allow-Origin: *" extension.
+Add localhost:5000 to the config of the extension.
